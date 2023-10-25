@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import Dashboard from "./Dashboard"; // Import your Dashboard component
 import RegisterPage from "./RegisterPage";
-import Verify from "./component2/Verify";
-import VerifyEmail from "./component2/VerifyEmail";
-import LandingPage from "./component2/LandingPage";
+import Verify from "./component/Verify";
+import VerifyEmail from "./component/VerifyEmail";
+import LandingPage from "./component/LandingPage";
 import RequestPasswordResetPage from "./RequestPasswordResetPage";
-import ResetPasswordInfo from "./component2/ContentArea/ResetPasswordInfo";
-import PasswordReset from "./component2/ResetPasswordForm";
+import ResetPasswordInfo from "./component/ResetPasswordInfo";
+import PasswordReset from "./component/ResetPasswordForm";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Register from "./component2/Register";
+import Register from "./component/Register";
 
 const RegisterPage: React.FC = () => {
   const handleRegisterSuccess = () => {};

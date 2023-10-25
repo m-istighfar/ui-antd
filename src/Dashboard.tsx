@@ -6,7 +6,7 @@ import {
   ToggleButton,
   ContentArea,
   LogoutButton,
-} from "./component2";
+} from "./component";
 
 import "./App.css";
 

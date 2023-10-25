@@ -19,12 +19,7 @@
 }
 
 .new-task-button {
-  /* position: absolute;
-  top: 20px;
-  right: 50px;
-  color: white; */
   background-color: rgb(44, 5, 80) !important ;
-  /* margin-bottom: 50px; */
 }
 
 .menu-toggle-button {
@@ -36,76 +31,68 @@
   color: darkblue;
   cursor: pointer;
   display: none;
-  z-index: 1010; /* Ensuring it's on top of everything */
+  z-index: 1010;
 }
 
-/* This style is no longer needed as the sidebar's trigger is now external */
 .ant-layout-sider-zero-width-trigger.ant-layout-sider-zero-width-trigger-left {
   display: none;
 }
 .blurred-content {
   filter: blur(8px);
-  pointer-events: none; /* This will make sure the blurred content is not interactable */
+  pointer-events: none;
 }
 
-/* Existing styles ... */
-
-/* Styling for the task card */
 .task-card {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  overflow: hidden; /* This ensures content inside respects the border-radius */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* for hover effect */
-  height: 280px; /* This is the fixed height for your card. Adjust as needed. */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px;
   position: relative;
 }
 
 .task-card:hover {
-  transform: translateY(-5px); /* Small move upwards */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for content inside the task card for better spacing */
 .task-card h3 {
-  margin-top: 0; /* Remove default margin */
-  padding: 16px 24px 0; /* Add some padding */
-  font-size: 20px; /* Bigger title */
-  color: #333; /* Darker text color */
-  white-space: nowrap; /* Prevents the text from wrapping onto the next line */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis for overflowed content */
+  margin-top: 0;
+  padding: 16px 24px 0;
+  font-size: 20px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 90%;
 }
 
 .task-card p {
-  padding: 8px 24px; /* Add some padding */
-  color: #555; /* Slightly muted text color */
-  white-space: nowrap; /* Prevents the text from wrapping onto the next line */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis for overflowed content */
+  padding: 8px 24px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 90%;
 }
 
-/* If you want a separator between the task items */
 .task-card p:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
 
-/* Ensure last paragraph in the card doesn't have too much bottom padding */
 .task-card p:last-child {
   padding-bottom: 16px;
 }
 
-/* Styling for the task card actions (icons) */
 .task-card-actions {
   display: flex;
-  justify-content: space-between; /* This evenly spaces the icons */
-  align-items: center; /* Align items vertically centered */
-  padding: 16px 24px; /* Padding for top, right, bottom, left */
-  position: absolute; /* Positioned relative to the card */
-  bottom: 0; /* Positioned at the bottom */
-  left: 0; /* Positioned to the left */
-  width: calc(100% - 48px); /* Width adjusted for 24px padding on both sides */
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 48px);
 }
 
 .complete-icon,
@@ -114,12 +101,11 @@
   border: none;
   color: #555;
   cursor: pointer;
-  margin: 0; /* This ensures equal spacing when using space-between in parent */
+  margin: 0;
 }
 
-/* If you have multiple icons/buttons and need spacing between them, use this: */
 .task-card-actions div:not(:last-child) button {
-  margin-right: 20px; /* Adjust as necessary */
+  margin-right: 20px;
 }
 
 @media (max-width: 1023px) {
@@ -141,42 +127,40 @@
 
 @media (max-width: 767px) {
   .task-card {
-    height: auto; /* Make height auto to adjust with content */
-    padding-bottom: 16px; /* Add some padding at the bottom */
+    height: auto;
+    padding-bottom: 16px;
   }
 
   .task-card h3 {
-    font-size: 18px; /* Slightly smaller title for mobile */
-    padding: 12px 16px 0; /* Adjusted padding */
+    font-size: 18px;
+    padding: 12px 16px 0;
   }
 
   .task-card p {
-    padding: 6px 16px; /* Adjusted padding */
-    font-size: 14px; /* Smaller font for descriptions */
+    padding: 6px 16px;
+    font-size: 14px;
   }
 
   .task-card-actions {
-    padding: 0 12px; /* Reduce padding on sides */
-    bottom: 8px; /* Adjust the bottom positioning */
+    padding: 0 12px;
+    bottom: 8px;
   }
 
-  /* Adjust icon sizes or any other specific styles as needed */
   .complete-icon {
     font-size: 14px;
   }
 
   .task-card-actions button {
-    padding: 6px; /* Reduced padding */
+    padding: 6px;
   }
 }
 
-/* Ensure the sidebar is on top */
 .ant-layout-sider {
   z-index: 1000;
 }
 
 .ant-modal .modal-ok-button {
-  background-color: #007bff; /* primary blue color */
+  background-color: #007bff;
   border: none;
   color: #fff;
   transition: background-color 0.3s ease;
@@ -187,13 +171,13 @@
 }
 
 .success-modal-ok-button {
-  background-color: #52c41a; /* Example: Set to Ant Design success color */
-  color: #fff; /* White text */
-  border-color: #52c41a; /* Same as background color */
+  background-color: #52c41a;
+  color: #fff;
+  border-color: #52c41a;
 
   &:hover,
   &:focus {
-    background-color: #73d13d; /* Slightly lighter green for hover/focus state */
+    background-color: #73d13d;
     border-color: #73d13d;
   }
 }

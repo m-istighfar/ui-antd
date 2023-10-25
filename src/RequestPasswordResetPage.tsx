@@ -1,4 +1,4 @@
-import RequestPasswordReset from "./component2/RequestPasswordReset";
+import RequestPasswordReset from "./component/RequestPasswordReset";
 
 function RequestPasswordResetPage() {
   return (
