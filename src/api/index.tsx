@@ -1,5 +1,5 @@
-const BASE_URL = "tender-elk-wear.cyclic.app/user";
-const AUTH_URL = "tender-elk-wear.cyclic.app/auth";
+const BASE_URL = "https://tender-elk-wear.cyclic.app/user";
+const AUTH_URL = "https://tender-elk-wear.cyclic.app/auth";
 
 export interface Task {
   _id: string;
