@@ -4,15 +4,15 @@ import {
   UserProfile,
   SidebarMenu,
   ToggleButton,
-  ContentArea,
   LogoutButton,
-} from "./component";
+} from "../components";
+import ContentArea from "../containers/ContentArea";
 
-import "./App.css";
+import "../App.css";
 
 const { Sider } = Layout;
 
-function Dashboard() {
+function DashboardPage() {
   const [collapsed, setCollapsed] = useState(true);
   const handleToggle = () => setCollapsed((prevState) => !prevState);
 
@@ -39,4 +39,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default DashboardPage;

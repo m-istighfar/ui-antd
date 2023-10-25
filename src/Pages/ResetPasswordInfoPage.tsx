@@ -1,9 +1,9 @@
 import React from "react";
 import { Card } from "antd";
 import { Link } from "react-router-dom";
-import "./ResetPasswordInfo.css";
+import "./ResetPasswordInfoPage.css";
 
-const ResetPasswordInfo: React.FC = () => {
+const ResetPasswordInfoPage: React.FC = () => {
   return (
     <div className="reset-password-info-container">
       <Card className="reset-password-info-card">
@@ -25,4 +25,4 @@ const ResetPasswordInfo: React.FC = () => {
   );
 };
 
-export default ResetPasswordInfo;
+export default ResetPasswordInfoPage;

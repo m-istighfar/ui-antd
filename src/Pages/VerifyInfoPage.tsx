@@ -1,9 +1,9 @@
 import React from "react";
 import { Card } from "antd";
 import { Link } from "react-router-dom";
-import "./Verify.css";
+import "./VerifyInfoPage.css";
 
-const Verify: React.FC = () => {
+const VerifyInfoPage: React.FC = () => {
   return (
     <div className="verify-container">
       <Card className="verify-card">
@@ -25,4 +25,4 @@ const Verify: React.FC = () => {
   );
 };
 
-export default Verify;
+export default VerifyInfoPage;

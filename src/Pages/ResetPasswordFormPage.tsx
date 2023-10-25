@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Form, Input, Button, Card, notification } from "antd";
 import { useParams, useNavigate } from "react-router-dom";
 import { resetPassword } from "../api";
-import "./ResetPasswordForm.css";
+import "./ResetPasswordFormPage.css";
 
-const PasswordReset: React.FC = () => {
+const PasswordResetFormPage: React.FC = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -81,4 +81,4 @@ const PasswordReset: React.FC = () => {
   );
 };
 
-export default PasswordReset;
+export default PasswordResetFormPage;

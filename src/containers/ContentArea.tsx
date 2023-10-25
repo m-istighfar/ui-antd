@@ -30,9 +30,9 @@ import {
 } from "../api";
 import formatDate from "../helper/formatDate";
 import formattedDate from "../helper/formatDateTD";
-import TaskDetailsModal from "./TaskDetailModal";
-import TaskSortingControls from "./TaskSortingControls";
-import TaskFilterControls from "./TaskFilterControls";
+import TaskDetailsModal from "../components/TaskDetailModal";
+import TaskSortingControls from "../components/TaskSortingControls";
+import TaskFilterControls from "../components/TaskFilterControls";
 
 interface ContentAreaProps {
   isBlurred: boolean;

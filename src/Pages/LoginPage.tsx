@@ -1,4 +1,4 @@
-import Login from "./component/Login"; // Adjust the import path according to your setup
+import Login from "../containers/Login";
 
 function LoginPage() {
   const handleLoginSuccess = (token: string, role: string) => {

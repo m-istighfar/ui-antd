@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button, Result } from "antd";
 import { verifyEmail } from "../api";
-import "./VerifyEmail.css";
+import "./VerifyEmailPage.css";
 
-const VerifyEmail = (): React.ReactElement | null => {
+const VerifyEmailPage = (): React.ReactElement | null => {
   const { token } = useParams();
   const [verificationStatus, setVerificationStatus] = useState<string | null>(
     null
@@ -74,4 +74,4 @@ const VerifyEmail = (): React.ReactElement | null => {
   return null;
 };
 
-export default VerifyEmail;
+export default VerifyEmailPage;
