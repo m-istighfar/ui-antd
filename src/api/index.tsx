@@ -1,5 +1,8 @@
-const BASE_URL = "http://localhost:3000/user";
-const AUTH_URL = "http://localhost:3000/auth";
+// const BASE_URL = "http://localhost:3000/user";
+// const AUTH_URL = "http://localhost:3000/auth";
+
+const BASE_URL = "https://talented-colt-veil.cyclic.app/user";
+const AUTH_URL = "https://talented-colt-veil.cyclic.app/auth";
 
 export interface Task {
   _id: string;

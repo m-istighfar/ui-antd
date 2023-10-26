@@ -1,4 +1,6 @@
-const BASE_URL = "http://localhost:3000/admin";
+// const BASE_URL = "http://localhost:3000/admin";
+
+const BASE_URL = "https://talented-colt-veil.cyclic.app/admin";
 
 export interface User {
   _id?: string;
