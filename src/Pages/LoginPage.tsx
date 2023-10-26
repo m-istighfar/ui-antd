@@ -4,6 +4,7 @@ function LoginPage() {
   const handleLoginSuccess = (token: string, role: string) => {
     localStorage.setItem("accessToken", token);
     localStorage.setItem("role", role);
+    localStorage.setItem("isLoggedIn", "true");
     console.log("Token:", token);
     console.log("Logged in with token:", token);
     console.log("Role:", role);

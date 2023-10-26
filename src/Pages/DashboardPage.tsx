@@ -16,7 +16,7 @@ function DashboardPage() {
   const [collapsed, setCollapsed] = useState(true);
   const handleToggle = () => setCollapsed((prevState) => !prevState);
 
-  const userRole = localStorage.getItem("role") === "admin" ? "admin" : "user";
+  const userRole = localStorage.getItem("role") as "admin" | "user";
 
   return (
     <Layout style={{ minHeight: "100vh" }}>

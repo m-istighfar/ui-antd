@@ -4,6 +4,7 @@ import { UserOutlined } from "@ant-design/icons";
 const handleLogout = () => {
   localStorage.removeItem("accessToken");
   localStorage.removeItem("role");
+  localStorage.removeItem("isLoggedIn");
   window.location.replace("/");
 };
 
