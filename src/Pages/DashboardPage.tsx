@@ -8,16 +8,15 @@ import {
 } from "../components";
 import ContentArea from "../containers/ContentArea";
 import AdminContent from "../components/AdminContent";
+import "../App.css";
 
 const { Sider } = Layout;
-
-const userRole = localStorage.getItem("role");
-
-import "../App.css";
 
 function DashboardPage() {
   const [collapsed, setCollapsed] = useState(true);
   const handleToggle = () => setCollapsed((prevState) => !prevState);
+
+  const userRole = localStorage.getItem("role") === "admin" ? "admin" : "user";
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
@@ -33,7 +32,7 @@ function DashboardPage() {
         collapsed={collapsed}
       >
         <UserProfile initials="M." />
-        <SidebarMenu />
+        <SidebarMenu userRole={userRole} />
         <LogoutButton />
       </Sider>
       <ToggleButton onClick={handleToggle} />
