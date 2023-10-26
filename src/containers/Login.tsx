@@ -33,9 +33,13 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
       });
     } catch (error) {
       console.error("Login error:", error);
+      let errorMessage = "An error occurred while logging in";
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
       notification.error({
         message: "Login Failed",
-        description: "An error occurred while logging in",
+        description: errorMessage,
       });
     } finally {
       setLoading(false);
